@@ -1,0 +1,18 @@
+package com.cg.mobile_billing.main;
+
+import com.cg.mobile_billing.beans.Address;
+import com.cg.mobile_billing.beans.Customer;
+import com.cg.mobile_billing.beans.PostpaidAccount;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Customer customer=new Customer(121, "Joe","Sunny", "7731004062", "joesunny49@gmail.com", "881067072704", "DRLPP8167A", "10-06-1997");
+		Address address=new Address("pune", "Maharashtra", "India", 412112);
+		PostpaidAccount postpaid=new PostpaidAccount("7731004062");
+		
+
+	}
+
+}

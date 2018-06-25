@@ -1,0 +1,30 @@
+package com.cg.payroll.main;
+
+import com.cg.payroll.beans.Associate;
+import com.cg.payroll.beans.BankDetails;
+import com.cg.payroll.beans.Salary;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+	Associate [] associateList =new Associate[3];
+	associateList[0]=new Associate(20, 20000, "joe", "Sunny", "DCX","Associate", "DRLPP8167A","joesunny49@gmail.com");
+	associateList[1]=new Associate(22, 30000, "josh", "sattya", "DCX","senior", "xcbhjsdgc","sunny23876@gmail.com");
+	
+	
+	
+	BankDetails bankdetails=new BankDetails(12345, "SBI", "SBIN0017903");	
+	Salary salary=new Salary(210000, 30000, 1500, 6000, 18000, 5000, 1560, 1560, 60000, 180000, 179000);
+	for(int i=0;i<associateList.length;i++)
+	{
+		if(associateList[i]!=null){
+		if (associateList[i].getAssociateID()==20){
+	System.out.println(associateList[i].getAssociateID()+" "+associateList[i].getFirstName()+" "+associateList[i].getLastName());
+	}}
+		
+	}
+	System.out.println("Bank details are :"+bankdetails.getAccountNumber()+" "+bankdetails.getBankName()+" "+bankdetails.getIfscCode());
+	System.out.println("Salary details are:"+salary.getBasicSalary()+" "+salary.getGrossSalary()+" "+salary.getNetSalary());
+	}
+
+}

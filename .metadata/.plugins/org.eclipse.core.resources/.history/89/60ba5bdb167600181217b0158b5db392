@@ -1,0 +1,10 @@
+package com.cg.project.services;
+
+public interface MathServices {
+	
+	int add(int n1,int n2);
+	
+	public void sub(int n1,int n2);
+
+	public abstract void div(int n1,int n2);
+}

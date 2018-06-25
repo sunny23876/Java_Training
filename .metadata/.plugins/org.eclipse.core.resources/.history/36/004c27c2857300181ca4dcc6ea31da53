@@ -1,0 +1,16 @@
+package com.cg.payroll.main;
+
+import com.cg.payroll.beans.Associate;
+import com.cg.payroll.beans.BankDetails;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+	Associate associate =new Associate(20, 20000, "joe", "Sunny", "DCX","Associate", "DRLPP8167A","joesunny49@gmail.com");
+	BankDetails bankdetails=new BankDetails(12345, "SBI", "SBIN0017903");	
+		
+		System.out.println("Associate details are "+associate.getAssociateID()+" "+associate.getFirstName()+" "+associate.getLastName()+" "+associate.getYearlyInvestmentUnder80C());
+		System.out.println("Bank details are "+bankdetails.getAccountNumber()+" "+bankdetails.getBankName()+" "+bankdetails.getIfscCode());
+	}
+
+}

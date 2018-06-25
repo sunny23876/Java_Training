@@ -1,0 +1,16 @@
+package com.cg.project.main;
+
+import com.cg.project.services.MathServices;
+import com.cg.project.services.MathServicesImpl;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		MathServices mathServices =new MathServicesImpl();
+		mathServices.add(5,110);
+		MathServicesImpl mathServicesImpl=(MathServicesImpl)mathServices;
+        mathServicesImpl.calcMul(20, 30);
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.cg.payroll.main;
+
+import com.cg.payroll.beans.Associate;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Associate associate =new Associate(20, 20000, "joe", "Sunny", "DCX","Associate", "DRLPP8167A","joesunny49@gmail.com");
+		
+		System.out.println("Associate details are "+associate.getAssociateID()+" "+associate.getFirstName()+" "+associate.getLastName()+" "+associate.getYearlyInvestmentUnder80C());
+	}
+
+}

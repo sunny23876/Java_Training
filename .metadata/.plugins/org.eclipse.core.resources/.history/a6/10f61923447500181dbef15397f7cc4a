@@ -1,0 +1,30 @@
+package com.cg.project.main;
+
+import com.cg.project.beans.CEmployee;
+import com.cg.project.beans.Employee;
+import com.cg.project.beans.PEmployee;
+import com.cg.project.beans.SalesManager;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Employee emp=new Employee(1, "joe", "sunny", 10000);
+		System.out.println(emp.toString());
+		
+		PEmployee pemp=new PEmployee(1, "Sri", "Ramya", 6000);
+		pemp.calculateSalary();
+		System.out.println(pemp.toString());
+		
+		CEmployee cemp=new CEmployee(1, "joe", "Sunny", 2000, 19);
+		cemp.signContract();
+		cemp.calculateSalary();
+		System.out.println(cemp.toString());
+		
+		SalesManager salesmanager=new SalesManager(123, "josh", "Satya", 20000, 600000);
+		salesmanager.calculateSalary();
+		System.out.println(salesmanager.toString());
+
+	}
+
+}

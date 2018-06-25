@@ -1,0 +1,21 @@
+package com.cg.mobile_billing.main;
+
+import com.cg.mobile_billing.beans.Address;
+import com.cg.mobile_billing.beans.Bill;
+import com.cg.mobile_billing.beans.Customer;
+import com.cg.mobile_billing.beans.Plan;
+import com.cg.mobile_billing.beans.PostpaidAccount;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Customer customer=new Customer(121, "Joe","Sunny", "7731004062", "joesunny49@gmail.com", "881067072704", "DRLPP8167A", "10-06-1997",
+										new Address("pune",	"Maharashtra", "India", 412114),
+										new PostpaidAccount("7731004062",new Plan(1121,12000, 200, 150, 50, 25, 200, "2ps/sec", "2.5ps/sec", "0.50/SMS", "0.75/SMS", "4Rs/MB", "maharashtra", "Vennela"), new Bill(123300, 20, 3, 20,3000 , 60, 500, 600, 200, 300, 5645, 95, 800, "June")));
+	
+
+	System.out.println("Total bill amount is:"+customer.getPostpaidAccount().getBill().getTotalBillAmount());
+	}
+
+}

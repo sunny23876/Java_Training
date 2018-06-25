@@ -1,0 +1,43 @@
+package com.cg.project.beans;
+
+public class SalesManager extends PEmployee{
+
+	private int salesAmt,commission;
+	
+	public SalesManager(){}
+
+	public SalesManager(int id, String firstname, String lastName, int basicSalary ,int salesAmt) {
+		super(id, firstname, lastName, basicSalary);
+		
+	}
+
+	public int getSalesAmt() {
+		return salesAmt;
+	}
+
+	public void setSalesAmt(int salesAmt) {
+		this.salesAmt = salesAmt;
+	}
+
+	public int getCommission() {
+		return commission;
+	}
+
+	public void setCommission(int commission) {
+		this.commission = commission;
+	}
+
+	@Override
+	public void CalculateSalary() {
+			super.CalculateSalary();
+	        this.setTotalSalary();     
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+	
+}

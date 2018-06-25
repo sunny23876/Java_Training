@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.cg.mobile_billing.beans.Customer"/>
+<fullyQualifiedTypeName name="com.cg.payroll.beans.Associate"/>
+<fullyQualifiedTypeName name="com.cg.payroll.beans.BankDetails"/>
+<fullyQualifiedTypeName name="com.cg.payroll.beans.Salary"/>
+<fullyQualifiedTypeName name="com.cg.banking.beans.Customer"/>
+<fullyQualifiedTypeName name="com.cg.banking.beans.Address"/>
+<fullyQualifiedTypeName name="com.cg.banking.beans.Account"/>
+<fullyQualifiedTypeName name="com.cg.banking.beans.Transaction"/>
+<fullyQualifiedTypeName name="com.cg.mobile_billing.beans.Address"/>
+<fullyQualifiedTypeName name="com.cg.mobile_billing.beans.Plan"/>
+<fullyQualifiedTypeName name="com.cg.mobile_billing.beans.Bill"/>
+<fullyQualifiedTypeName name="com.cg.mobile_billing.beans.PostpaidAccount"/>
+<fullyQualifiedTypeName name="com.cg.project.beans.Employee"/>
+<fullyQualifiedTypeName name="com.cg.project.beans.PEmployee"/>
+<fullyQualifiedTypeName name="com.cg.project.beans.CEmployee"/>
+<fullyQualifiedTypeName name="com.cg.project.beans.SalesManager"/>
+<fullyQualifiedTypeName name="com.cg.project.services.MathServices"/>
+<fullyQualifiedTypeName name="com.cg.project.services.MathServicesImpl"/>
+</qualifiedTypeNameHistroy>

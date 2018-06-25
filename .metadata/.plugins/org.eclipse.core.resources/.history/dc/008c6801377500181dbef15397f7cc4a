@@ -1,0 +1,46 @@
+package com.cg.project.beans;
+
+public class CEmployee extends Employee {
+	
+	int noOfHrs,variablePay;
+	
+public CEmployee(){}
+
+public CEmployee(int id, String firstname, String lastName, int basicSalary,int noOfHrs) {
+	super(id, firstname, lastName, basicSalary);
+	this.noOfHrs=noOfHrs;
+}
+
+public int getNoOfHrs() {
+	return noOfHrs;
+}
+
+public void setNoOfHrs(int noOfHrs) {
+	this.noOfHrs = noOfHrs;
+}
+
+public int getVariablePay() {
+	return variablePay;
+}
+
+public void setVariablePay(int variablePay) {
+	this.variablePay = variablePay;
+}
+
+@Override
+public void CalculateSalary() {
+	this.setTotalSalary(getNoOfHrs()*variablePay);
+}
+
+public void signContract(){
+	System.out.println("Contract is signed");
+}
+
+@Override
+public String toString() {
+	return super.toString();
+}
+
+
+
+}

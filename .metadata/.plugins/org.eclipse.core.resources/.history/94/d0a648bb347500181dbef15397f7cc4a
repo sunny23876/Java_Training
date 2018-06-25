@@ -1,0 +1,16 @@
+package com.cg.project.beans;
+
+public class PEmployee extends Employee {
+	
+	private int hra,ta,da;
+	
+	public PEmployee(){}
+
+	public PEmployee(int id, String firstname, String lastName, int basicSalary) {
+		super(id, firstname, lastName, basicSalary);
+	}
+	
+	
+	
+
+}
